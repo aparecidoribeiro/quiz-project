@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+
+$tela-inicial: "/public/telaInicial.svg";
+$tela-perguntas: "/public/telaPerguntas.svg";
+$icon-infor: "/src/icons/infor.svg";
+$icon-volume: "/src/icons/volume.svg";
+$font: 'Salsa', cursive;
+$paddind-btn: 12px 32px;
+
+//Paleta de cores
+$blue: #163ED4;
+$white-one: #F4F4F4;
+$white-two: #A1A1A1;
+
+
+@mixin reset-body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font;
+    color: $white-one;
+
+    h1,
+    h2,
+    h3,
+    p {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@mixin imagem-back($image) {
+    background-image: url($image);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@mixin tamanho {
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 35px 27px 45px;
+}

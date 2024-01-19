@@ -1,0 +1,26 @@
+@import '@/config/config';
+
+
+.button {
+    text-decoration: none;
+    color: $white-one;
+    padding: $paddind-btn;
+    background-color: $blue;
+    border-radius: 8px;
+    border: 1px solid $white-one;
+    text-transform: uppercase;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    gap: 10px;
+    cursor: pointer;
+    max-width: 130px;
+
+    .button-icon {
+        color: $white-one;
+        width: 18px;
+    }
+}

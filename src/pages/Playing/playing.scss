@@ -1,0 +1,13 @@
+@import '@/config/config';
+
+body {
+    @include reset-body;
+}
+
+.playing {
+    @include imagem-back($tela-perguntas);
+    @include tamanho;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}

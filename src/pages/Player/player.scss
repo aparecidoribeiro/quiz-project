@@ -1,0 +1,43 @@
+@import '@/config/config';
+
+body {
+    @include reset-body;
+}
+
+.player {
+    @include imagem-back($tela-inicial);
+    @include tamanho;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.player-sobre {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 4rem;
+
+    h1 {
+        text-transform: uppercase;
+        font-size: 2.5rem;
+    }
+
+    p {
+        text-transform: uppercase;
+        font-size: 14px;
+        width: 90%;
+    }
+}
+
+.button-som {
+    background-image: url($icon-infor);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: none;
+    width: 24px;
+    height: 24px;
+}
