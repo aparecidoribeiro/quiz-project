@@ -1,0 +1,24 @@
+@import '@/config/config';
+
+
+.button-othes {
+    text-decoration: none;
+    color: $white-one;
+    padding: 10px 14px;
+    background-color: $blue;
+    border-radius: 8px;
+    border: 1px solid $white-one;
+    text-transform: uppercase;
+    text-align: center;
+    width: auto;
+    height: auto;
+    font-size: 1rem;
+    gap: 10px;
+    cursor: pointer;
+    max-width: 130px;
+
+    .icon-button {
+        color: $white-one;
+        width: 18px;
+    }
+}

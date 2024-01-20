@@ -1,5 +1,5 @@
 import './player.scss'
-import Button from '@/components/Button'
+import ButtonPlay from '@/components/ButtonPlay'
 import play from '@/icons/play.svg'
 import infor from '@/icons/info.svg'
 import volume from '@/icons/volume.svg'
@@ -21,7 +21,7 @@ const Player = () => {
         <h1>Você sabe?</h1>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the</p>
       </div>
-      <Button
+      <ButtonPlay
         text={"Play"}
         icon={play}
         size={"1.4rem"}

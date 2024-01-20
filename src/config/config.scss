@@ -11,6 +11,7 @@ $paddind-btn: 12px 32px;
 $blue: #163ED4;
 $white-one: #F4F4F4;
 $white-two: #A1A1A1;
+$black: #151515;
 
 
 @mixin reset-body {
@@ -26,6 +27,10 @@ $white-two: #A1A1A1;
     p {
         margin: 0;
         padding: 0;
+    }
+
+    * {
+        box-sizing: border-box;
     }
 }
 

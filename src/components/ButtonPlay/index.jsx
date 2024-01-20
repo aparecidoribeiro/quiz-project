@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
-import './button.scss'
+import './ButtonPlay.scss'
 
-const Button = ({ text, icon }) => {
+const ButtonPlay = ({ text, icon }) => {
     return (
         <Link to={"/playing"} className='button'>
             <img src={icon} className='button-icon' />
@@ -10,4 +10,4 @@ const Button = ({ text, icon }) => {
     )
 }
 
-export default Button
+export default ButtonPlay
