@@ -1,12 +1,23 @@
-import { Link } from 'react-router-dom'
 import './ButtonOthers.scss'
+import { useSelector, useDispatch } from 'react-redux'
+import { valueFalse } from '@/features/next'
+import { nextQuestion } from '@/features/counter'
 
 
 const ButtonOthers = ({ text, to }) => {
+
+    const counter = useSelector((state) => state.counter)
+    const dispatch = useDispatch()
+
+    function actionBtn() {
+        dispatch(valueFalse())
+        dispatch(nextQuestion())
+    }
+
     return (
-        <Link to={to} className='button-othes'>
+        <button to={to} className='button-othes' onClick={actionBtn} >
             {text}
-        </Link>
+        </button>
     )
 }
 

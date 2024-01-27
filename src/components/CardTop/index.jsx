@@ -5,10 +5,10 @@ const CardTop = ({ result }) => {
     const value = 10;
     return (
         <div className='card-top'>
-            <ButtonOthers
+            {/* <ButtonOthers
                 text={"Voltar"}
                 to={'/'}
-            />
+            /> */}
             <p>{value}/{value}</p>
         </div>
     )

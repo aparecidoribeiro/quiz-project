@@ -12,9 +12,14 @@
     border-right: 1px solid $white-two;
     border: none;
 
-    span {
-        width: 100%;
-        font-family: $font;
-        font-size: 1.3rem;
-    }
+    font-family: $font;
+    font-size: 1.3rem;
+}
+
+.correta {
+    background-color: $gren;
+}
+
+.errada {
+    background-color: $red;
 }
