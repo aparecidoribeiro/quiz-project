@@ -11,6 +11,11 @@ const initialState = [
         altenativas: [2000, 2012, 2022, 2024],
         correta: 2024
     },
+    {
+        pergunta: "Minha data de nascimento?",
+        altenativas: [2000, 2012, 2022, 2024],
+        correta: 2024
+    },
 ]
 
 const dateSlice = createSlice({

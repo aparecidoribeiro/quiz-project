@@ -2,16 +2,17 @@ import './ButtonOthers.scss'
 import { useSelector, useDispatch } from 'react-redux'
 import { valueFalse } from '@/features/next'
 import { nextQuestion } from '@/features/counter'
-
+import { removeClass, valueTogle } from '@/features/click'
 
 const ButtonOthers = ({ text, to }) => {
 
-    const counter = useSelector((state) => state.counter)
     const dispatch = useDispatch()
 
     function actionBtn() {
         dispatch(valueFalse())
         dispatch(nextQuestion())
+        dispatch(removeClass())
+        dispatch(valueTogle(true))
     }
 
     return (

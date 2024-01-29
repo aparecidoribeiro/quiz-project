@@ -1,39 +1,28 @@
 import './CardAlternativa.scss'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { valueTrue } from '@/features/next'
-import { useState } from 'react'
-
-
+import { clickCorreto, clickErrado, valueTogle } from '@/features/click'
 
 const CardAlternativa = ({ text, option }) => {
-
-
+  const click = useSelector((state) => state.click.value)
   const dispatch = useDispatch()
 
   function actionBtn(e) {
     dispatch(valueTrue())
-
     addClass(e)
   }
 
-  const [lock, setLock] = useState(true)
-
-
   function addClass(e) {
-
-    if (lock === true) {
-      if (e.target.innerText == option) {
-        e.target.classList.add("correta")
-        setLock(false)
-      }
-      else {
-        e.target.classList.add("errado")
-        setLock(false)
+    if (click == true) {
+      if (option == e.target.innerText) {
+        dispatch(clickCorreto(e.target))
+        dispatch(valueTogle(false))
+      } else {
+        dispatch(clickErrado(e.target))
+        dispatch(valueTogle(false))
       }
     }
-
   }
-
 
   return (
     <button className='card-alt' onClick={actionBtn}>
