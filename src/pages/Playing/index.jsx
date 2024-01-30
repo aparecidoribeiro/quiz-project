@@ -4,6 +4,7 @@ import CardPerguntas from '@/components/CardPerguntas'
 import CardAlternativa from '@/components/CardAlternativa'
 import ButtonOthers from '@/components/ButtonOthers'
 import { useSelector } from 'react-redux'
+import { redirect } from 'react-router-dom'
 
 const Playing = () => {
     const nextValue = useSelector((state) => state.next)
@@ -14,10 +15,10 @@ const Playing = () => {
     return (
         <div className='playing'>
             <CardTop />
-            <CardPerguntas
+            {index != date.length && <CardPerguntas
                 pergunta={date[index].pergunta}
-            />
-            <div className='playing-alt'>
+            />}
+            {index != date.length && <div className='playing-alt'>
                 {date[index].altenativas.map((e, i) => {
                     return (
                         <CardAlternativa
@@ -27,7 +28,7 @@ const Playing = () => {
                         />
                     )
                 })}
-            </div>
+            </div>}
             {nextValue.value && <ButtonOthers
                 text={"Continuar"}
                 to={'/'}

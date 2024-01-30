@@ -10,10 +10,14 @@ const counterSlice = createSlice({
     reducers: {
         nextQuestion: (state) => {
             state.value += 1
+            console.log(state.value)
+        },
+        zeroQuestion: (state) => {
+            state.value = 0
         }
     }
 })
 
-export const {nextQuestion} = counterSlice.actions;
+export const { nextQuestion, zeroQuestion } = counterSlice.actions;
 
 export default counterSlice.reducer;

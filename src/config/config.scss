@@ -12,8 +12,12 @@ $blue: #163ED4;
 $white-one: #F4F4F4;
 $white-two: #A1A1A1;
 $black: #151515;
-$gren: #4BEE12;
-$red: #DA1111;
+$gren-one: #4BEE12;
+$gren-two: #BBFD9C;
+$gren-border: #5FD138;
+$red-one: #DA1111;
+$red-two: #FBA1A1;
+$red-border: #CA3C32;
 
 @mixin reset-body {
     margin: 0;
@@ -49,9 +53,18 @@ $red: #DA1111;
 }
 
 .correto {
-    background-color: $gren;
+    background-color: $gren-two;
+    border-top: 1px solid $gren-border;
+    border-left: 1px solid $gren-border;
+    border-right: 1px solid $gren-border;
+    box-shadow: 0px 4px 0px 0px $gren-border;
 }
 
 .errado {
-    background-color: $red;
+    background-color: $red-two;
+    border-top: 1px solid $red-border;
+    border-left: 1px solid $red-border;
+    border-right: 1px solid $red-border;
+    // box-shadow: none;
+    box-shadow: 0px 4px 0px 0px $red-border;
 }

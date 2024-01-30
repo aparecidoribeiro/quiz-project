@@ -1,11 +1,11 @@
 import './ButtonOthers.scss'
-import { useSelector, useDispatch } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import { valueFalse } from '@/features/next'
 import { nextQuestion } from '@/features/counter'
 import { removeClass, valueTogle } from '@/features/click'
+import { } from 'react'
 
 const ButtonOthers = ({ text, to }) => {
-
     const dispatch = useDispatch()
 
     function actionBtn() {
