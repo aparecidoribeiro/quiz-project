@@ -10,7 +10,6 @@ const counterSlice = createSlice({
     reducers: {
         nextQuestion: (state) => {
             state.value += 1
-            console.log(state.value)
         },
         zeroQuestion: (state) => {
             state.value = 0

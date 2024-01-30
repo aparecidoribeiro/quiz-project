@@ -5,8 +5,6 @@ import { clickCorreto, clickErrado, valueTogle } from '@/features/click'
 import { certainQuestion } from '@/features/correct'
 
 const CardAlternativa = ({ text, option }) => {
-  const date = useSelector((state) => state.date.length);
-  const counter = useSelector((state) => state.counter.value + 1)
   const click = useSelector((state) => state.click.value)
   const dispatch = useDispatch()
 
@@ -22,16 +20,11 @@ const CardAlternativa = ({ text, option }) => {
         dispatch(clickCorreto(e.target))
         dispatch(valueTogle(false))
         dispatch(certainQuestion())
+
       } else {
         dispatch(clickErrado(e.target))
         dispatch(valueTogle(false))
       }
-    }
-  }
-
-  function actionResult() {
-    if (counter == date) {
-      window.location.replace('/result')
     }
   }
 

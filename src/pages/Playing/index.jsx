@@ -4,7 +4,6 @@ import CardPerguntas from '@/components/CardPerguntas'
 import CardAlternativa from '@/components/CardAlternativa'
 import ButtonOthers from '@/components/ButtonOthers'
 import { useSelector } from 'react-redux'
-import { redirect } from 'react-router-dom'
 
 const Playing = () => {
     const nextValue = useSelector((state) => state.next)
@@ -31,7 +30,6 @@ const Playing = () => {
             </div>}
             {nextValue.value && <ButtonOthers
                 text={"Continuar"}
-                to={'/'}
             />}
         </div>
     )

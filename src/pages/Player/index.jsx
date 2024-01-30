@@ -3,15 +3,41 @@ import ButtonPlay from '@/components/ButtonPlay'
 import play from '@/icons/play.svg'
 import infor from '@/icons/info.svg'
 import volume from '@/icons/volume.svg'
+import volumeOff from '@/icons/volume-off.svg'
+import musicPlay from '@/sons/play.mp3'
+import { useDispatch } from 'react-redux'
+import { zeroQuestion } from '@/features/counter'
+import { useState } from 'react'
 
 const Player = () => {
+
+  const music = new Audio(musicPlay)
+  const dispatch = useDispatch()
+  const [som, setSom] = useState(true)
+
+  const actionPlay = () => {
+    dispatch(zeroQuestion())
+  }
+
+  const actionVolume = (e) => {
+    const imgBtn = document.querySelector('.button-volume')
+
+    if (som === true) {
+      setSom(false)
+      imgBtn.setAttribute('src', volumeOff)
+      console.log('som desligado')
+    } else if (som === false) {
+      setSom(true)
+      imgBtn.setAttribute('src', volume)
+      console.log('som ligado')
+    }
+  }
+
   return (
     <div className='player'>
       <div className='player-config'>
-        <button className='button-config' onClick={(e) => {
-          console.log(e)
-        }}>
-          <img src={volume} />
+        <button className='button-config' onClick={actionVolume}>
+          <img className='button-volume' src={volume} />
         </button>
         <button type='submit' className='button-config'>
           <img src={infor} />
@@ -25,6 +51,7 @@ const Player = () => {
         text={"Play"}
         icon={play}
         size={"1.4rem"}
+        onClick={actionPlay}
       />
     </div>
   )

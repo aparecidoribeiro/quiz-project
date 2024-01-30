@@ -2,9 +2,9 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = [
     {
-        pergunta: "Qual sua idade?",
-        altenativas: [12, 13, 14, 15],
-        correta: 12
+        pergunta: "Qual minha idade?",
+        altenativas: [12, 13, 18, 15],
+        correta: 18
     },
     {
         pergunta: "Que ano estamos?",
@@ -12,9 +12,9 @@ const initialState = [
         correta: 2024
     },
     {
-        pergunta: "Minha data de nascimento?",
-        altenativas: [2000, 2012, 2022, 2024],
-        correta: 2024
+        pergunta: "Em que ano nasci?",
+        altenativas: [2005, 2012, 2022, 2024],
+        correta: 2005
     },
 ]
 

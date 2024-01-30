@@ -16,7 +16,11 @@ const ButtonOthers = ({ text, to }) => {
     }
 
     return (
-        <button to={to} className='button-othes' onClick={actionBtn} >
+        <button
+            to={to}
+            className='button-othes'
+            onClick={actionBtn}
+        >
             {text}
         </button>
     )

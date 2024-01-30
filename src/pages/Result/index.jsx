@@ -5,7 +5,7 @@ import ButtonNew from '@/components/ButtonNew';
 const Result = () => {
 
   const date = useSelector((state) => state.date.length)
-  const correct = useSelector((state) => state.counter.value)
+  const correct = useSelector((state) => state.correct.value)
 
   return (
     <div className='result'>
