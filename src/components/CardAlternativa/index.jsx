@@ -11,7 +11,6 @@ const CardAlternativa = ({ text, option }) => {
   function actionBtn(e) {
     dispatch(valueTrue())
     addClass(e)
-    actionResult()
   }
 
   function addClass(e) {

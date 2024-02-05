@@ -4,19 +4,19 @@ import play from '@/icons/play.svg'
 import infor from '@/icons/info.svg'
 import volume from '@/icons/volume.svg'
 import volumeOff from '@/icons/volume-off.svg'
-import musicPlay from '@/sons/play.mp3'
 import { useDispatch } from 'react-redux'
 import { zeroQuestion } from '@/features/counter'
 import { useState } from 'react'
 
 const Player = () => {
 
-  const music = new Audio(musicPlay)
-  const dispatch = useDispatch()
+  const music = new Audio('/src/sons/play.mp3')
   const [som, setSom] = useState(true)
+  const dispatch = useDispatch()
 
-  const actionPlay = () => {
+  const actionPlay = (e) => {
     dispatch(zeroQuestion())
+    dispatch(telaPlaying())
   }
 
   const actionVolume = (e) => {

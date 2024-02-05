@@ -4,7 +4,9 @@ body {
     @include reset-body;
 }
 
-.PlayingOne {
+.playing {
+    @include imagem-back($tela-perguntas);
+    @include tamanho;
     display: flex;
     align-items: center;
     flex-direction: column;

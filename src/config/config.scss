@@ -36,6 +36,7 @@ $red-border: #CA3C32;
 
     * {
         box-sizing: border-box;
+        font-family: $font;
     }
 }
 
@@ -65,6 +66,5 @@ $red-border: #CA3C32;
     border-top: 1px solid $red-border;
     border-left: 1px solid $red-border;
     border-right: 1px solid $red-border;
-    // box-shadow: none;
     box-shadow: 0px 4px 0px 0px $red-border;
 }

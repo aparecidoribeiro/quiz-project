@@ -5,7 +5,7 @@ import { nextQuestion } from '@/features/counter'
 import { removeClass, valueTogle } from '@/features/click'
 import { } from 'react'
 
-const ButtonOthers = ({ text, to }) => {
+const ButtonOthers = () => {
     const dispatch = useDispatch()
 
     function actionBtn() {
@@ -17,11 +17,10 @@ const ButtonOthers = ({ text, to }) => {
 
     return (
         <button
-            to={to}
             className='button-othes'
             onClick={actionBtn}
         >
-            {text}
+            Continuar
         </button>
     )
 }

@@ -4,6 +4,7 @@ import nextReducer from '../features/next'
 import counterReducer from '../features/counter'
 import clickReducer from '../features/click'
 import correctReducer from '../features/correct'
+import localReducer from '../features/local'
 
 export const store = configureStore({
     reducer: {
@@ -11,6 +12,7 @@ export const store = configureStore({
         next: nextReducer,
         counter: counterReducer,
         click: clickReducer,
-        correct: correctReducer
+        correct: correctReducer, 
+        local: localReducer
     }
 })
