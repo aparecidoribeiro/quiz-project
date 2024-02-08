@@ -1,5 +1,6 @@
 import Player from "@/pages/Player"
 import Playing from "@/pages/Playing"
+import Modal from '@/components/Modal';
 import { useSelector } from "react-redux"
 
 const PlayingTwo = () => {
@@ -8,6 +9,7 @@ const PlayingTwo = () => {
 
     return (
         <>
+            <Modal />
             {local == 'Play' ? <Player /> : <Playing />}
         </>
     )

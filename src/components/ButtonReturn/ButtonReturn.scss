@@ -1,9 +1,9 @@
 @import '@/config/config';
 
-
-.button-new {
+.button-return {
     text-decoration: none;
     color: $white-one;
+    padding: 10px 14px;
     background-color: $blue;
     border-radius: 8px;
     border: 1px solid $white-one;
@@ -11,14 +11,7 @@
     text-align: center;
     width: auto;
     height: auto;
-    font-size: 1.3rem;
-    padding: 10px 14px;
+    font-size: 1rem;
     gap: 10px;
     cursor: pointer;
-    font-family: $font;
-
-    .icon-button {
-        color: $white-one;
-        width: 18px;
-    }
 }

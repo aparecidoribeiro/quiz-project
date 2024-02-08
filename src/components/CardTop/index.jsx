@@ -1,5 +1,6 @@
 import './cardTop.scss'
 import { useSelector } from 'react-redux';
+import ButtonReturn from '@/components/ButtonReturn';
 
 const CardTop = () => {
     const dateLength = useSelector((state) => state.date.length)
@@ -7,10 +8,7 @@ const CardTop = () => {
 
     return (
         <div className='card-top'>
-            {/* <ButtonOthers
-                text={"Voltar"}
-                to={'/'}
-            /> */}
+            <ButtonReturn />
             <p>{counterQuestion}/{dateLength}</p>
         </div>
     )

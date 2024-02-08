@@ -1,0 +1,50 @@
+@import '@/config/config';
+
+
+.modal {
+    position: absolute;
+    background: $black-two;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    z-index: 10;
+    display: none;
+
+    >div {
+        width: 270px;
+        height: 230px;
+        background: $white-one;
+        color: $black;
+        border-radius: 10px;
+        text-align: center;
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        p {
+            font-size: 1.3rem;
+        }
+    }
+
+}
+
+.actions-modal {
+    display: flex;
+    gap: 1.5rem;
+
+    button {
+        font-size: 1rem;
+        padding: 10px 18px;
+        cursor: pointer;
+        border: none;
+        color: $white-one;
+        background-color: $blue;
+        border-radius: 8px;
+    }
+}

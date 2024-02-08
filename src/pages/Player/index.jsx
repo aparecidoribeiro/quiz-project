@@ -33,6 +33,17 @@ const Player = () => {
 
   }
 
+  const actionModal = () => {
+    const modal = document.querySelector('.modal-infor')
+    modal.style.display = "flex"
+  }
+
+
+  const modalNone = () => {
+    const modal = document.querySelector('.modal-infor')
+    modal.style.display = "none"
+  }
+
   return (
     <div className='player'>
       <div className='player-config'>
@@ -42,9 +53,15 @@ const Player = () => {
             <img src={volumeOff} className='img-volume' />
           </label>
         </div>
-        <button type='submit' className='button-config'>
+        <button type='submit' className='button-config' onClick={actionModal}>
           <img src={infor} />
         </button>
+      </div>
+      <div className='modal-infor'>
+        <div>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the</p>
+          <button onClick={modalNone}>Voltar</button>
+        </div>
       </div>
       <div className='player-sobre'>
         <h1>Você sabe?</h1>
