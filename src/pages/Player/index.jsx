@@ -6,39 +6,42 @@ import volume from '@/icons/volume.svg'
 import volumeOff from '@/icons/volume-off.svg'
 import { useDispatch } from 'react-redux'
 import { zeroQuestion } from '@/features/counter'
-import { useState } from 'react'
 
 const Player = () => {
 
   const music = new Audio('/src/sons/play.mp3')
-  const [som, setSom] = useState(true)
+  music.loop = true
   const dispatch = useDispatch()
 
-  const actionPlay = (e) => {
+  const actionPlay = () => {
     dispatch(zeroQuestion())
     dispatch(telaPlaying())
   }
 
-  const actionVolume = (e) => {
-    const imgBtn = document.querySelector('.button-volume')
 
-    if (som === true) {
-      setSom(false)
-      imgBtn.setAttribute('src', volumeOff)
-      console.log('som desligado')
-    } else if (som === false) {
-      setSom(true)
+  const actionMusic = () => {
+    const imgBtn = document.querySelector('.img-volume')
+    const btnVolume = document.querySelector('#volume')
+
+    if (btnVolume.checked) {
       imgBtn.setAttribute('src', volume)
-      console.log('som ligado')
+      music.play()
+    } else {
+      imgBtn.setAttribute('src', volumeOff)
+      music.pause()
     }
+
   }
 
   return (
     <div className='player'>
       <div className='player-config'>
-        <button className='button-config' onClick={actionVolume}>
-          <img className='button-volume' src={volume} />
-        </button>
+        <div className='button-config'>
+          <input type="checkbox" id='volume' onChange={actionMusic} />
+          <label className='button-volume' htmlFor="volume">
+            <img src={volumeOff} className='img-volume' />
+          </label>
+        </div>
         <button type='submit' className='button-config'>
           <img src={infor} />
         </button>
