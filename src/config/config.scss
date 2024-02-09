@@ -6,6 +6,7 @@ $icon-infor: "/src/icons/infor.svg";
 $icon-volume: "/src/icons/volume.svg";
 $font: 'Salsa', cursive;
 $paddind-btn: 12px 32px;
+$paddind-desktop: 35px 40px 45px;
 
 
 //Resoluções
@@ -15,6 +16,8 @@ $desktop: 1025px;
 $blue: #163ED4;
 $white-one: #F4F4F4;
 $white-two: #A1A1A1;
+$white-one-hover: #e7e7e7;
+$white-two-hover: #979797;
 $black: #151515;
 $black-two: rgba(0, 0, 0, 0.5);
 $gren-one: #4BEE12;
@@ -56,6 +59,18 @@ $red-border: #CA3C32;
     height: 100vh;
     box-sizing: border-box;
     padding: 35px 27px 45px;
+}
+
+@mixin paddin-desktop {
+    padding: 35px 40px 45px;
+}
+
+
+@mixin modal-desktop {
+    width: 370px;
+    height: 300px;
+    font-size: 1.3rem;
+    padding: 1.4rem;
 }
 
 .correto {

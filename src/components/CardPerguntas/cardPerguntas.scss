@@ -21,3 +21,9 @@
         
     }
 }
+
+@media screen and (min-width: $desktop) {
+    .card-peguntas {
+        height: 200px;
+    }
+}

@@ -15,5 +15,13 @@
     font-family: $font;
     font-size: 1.3rem;
     cursor: pointer;
+
+
+
 }
 
+@media screen and (min-width: $desktop) {
+    .card-alt {
+        height: 90px;
+    }
+}

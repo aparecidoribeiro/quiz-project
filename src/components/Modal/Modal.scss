@@ -48,3 +48,21 @@
         border-radius: 8px;
     }
 }
+
+
+@media (min-width: $desktop) {
+    .modal {
+        >div {
+            @include modal-desktop;
+            gap: 2rem;
+
+            p {
+                font-size: 1.6rem;
+            }
+
+            button {
+                font-size: 1.4rem;
+            }
+        }
+    }
+}

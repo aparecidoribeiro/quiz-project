@@ -26,3 +26,10 @@
         width: 18px;
     }
 }
+
+@media (min-width: $desktop) {
+    .button-othes {
+        margin-right: 40px;
+        font-size: 1.5rem;
+    }
+}

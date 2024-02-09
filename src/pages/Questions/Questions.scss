@@ -20,3 +20,23 @@ body {
     }
 
 }
+
+@media screen and (min-width: $desktop) {
+    .playing {
+        padding: $paddind-desktop;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        gap: 3rem;
+        
+
+        .playing-alt {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 2rem;
+        }
+    }
+}

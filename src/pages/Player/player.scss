@@ -104,3 +104,42 @@ body {
         border-radius: 8px;
     }
 }
+
+@media (min-width: $desktop) {
+    .player {
+        padding: $paddind-desktop;
+
+        .player-config {
+            padding: $paddind-desktop;
+
+
+            img,
+            label {
+                width: 2.4rem;
+            }
+
+        }
+
+        .modal-infor {
+            div {
+                @include modal-desktop;
+
+                button {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+
+        .player-sobre {
+            gap: 2rem;
+
+            h1 {
+                font-size: 3rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+    }
+}

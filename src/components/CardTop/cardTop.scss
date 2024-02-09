@@ -17,3 +17,10 @@
         font-size: 1.7rem;
     }
 }
+
+@media (min-width: $desktop) {
+    .card-top {
+        padding: $paddind-desktop;
+        height: 100px;
+    }
+}
