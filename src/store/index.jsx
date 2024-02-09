@@ -5,6 +5,7 @@ import counterReducer from '../features/counter'
 import clickReducer from '../features/click'
 import correctReducer from '../features/correct'
 import localReducer from '../features/local'
+import questionsReducer from '../features/questions'
 
 export const store = configureStore({
     reducer: {
@@ -12,7 +13,8 @@ export const store = configureStore({
         next: nextReducer,
         counter: counterReducer,
         click: clickReducer,
-        correct: correctReducer, 
-        local: localReducer
+        correct: correctReducer,
+        local: localReducer,
+        questions: questionsReducer
     }
 })

@@ -8,21 +8,23 @@ import { useSelector } from 'react-redux'
 const Questions = () => {
     const nextValue = useSelector((state) => state.next)
     const date = useSelector((state) => state.date);
+    const question = useSelector((state) => state.questions);
     const counter = useSelector((state) => state.counter)
     const index = counter.value
+    const value = question[0]
 
     return (
         <div className='playing'>
             <CardTop />
             {index != date.length && <CardPerguntas
-                pergunta={date[index].pergunta}
+                pergunta={value[index].pergunta}
             />}
             {index != date.length && <div className='playing-alt'>
-                {date[index].altenativas.map((e, i) => {
+                {value[index].altenativas.map((e, i) => {
                     return (
                         <CardAlternativa
                             text={e}
-                            option={date[index].correta}
+                            option={value[index].correta}
                             key={i}
                         />
                     )
