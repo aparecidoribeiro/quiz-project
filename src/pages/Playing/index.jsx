@@ -1,4 +1,4 @@
-import './Playing.scss'
+import './playing.scss'
 import { useSelector } from 'react-redux'
 import Questions from '../Questions'
 import Result from '../Result'
