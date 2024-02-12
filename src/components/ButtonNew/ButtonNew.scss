@@ -16,6 +16,7 @@
     gap: 10px;
     cursor: pointer;
     font-family: $font;
+    animation: animation-button 1s infinite alternate-reverse;
 
     .icon-button {
         color: $white-one;

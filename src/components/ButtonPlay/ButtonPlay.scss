@@ -18,6 +18,7 @@
     gap: 10px;
     cursor: pointer;
     max-width: 130px;
+    animation: animation-button 1s infinite alternate-reverse;
 
     .button-icon {
         color: $white-one;

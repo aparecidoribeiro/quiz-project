@@ -79,6 +79,13 @@ $red-border: #CA3C32;
     padding: 1.4rem;
 }
 
+@keyframes animation-button {
+    0% {
+        scale: 1.2;
+    }
+}
+
+
 .correto {
     background-color: $gren-two;
     border-top: 1px solid $gren-border;
