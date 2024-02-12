@@ -33,3 +33,9 @@
         font-size: 1.5rem;
     }
 }
+
+@media (min-width: $tablet) {
+    .button-othes {
+        margin-right: 40px;
+    }
+}

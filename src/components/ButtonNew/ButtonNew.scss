@@ -12,7 +12,7 @@
     width: auto;
     height: auto;
     font-size: 1.3rem;
-    padding: 10px 14px;
+    padding: 10px 16px;
     gap: 10px;
     cursor: pointer;
     font-family: $font;
@@ -20,5 +20,19 @@
     .icon-button {
         color: $white-one;
         width: 18px;
+    }
+}
+
+@media (min-width: $desktop) {
+    .button-new {
+        padding: 10px 20px;
+        font-size: 2.2rem;
+        margin-top: 1rem;
+    }
+}
+
+@media (min-width: $tablet) {
+    .button-new {
+        font-size: 1.7rem;
     }
 }

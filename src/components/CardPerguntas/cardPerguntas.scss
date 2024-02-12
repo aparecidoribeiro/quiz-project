@@ -18,12 +18,26 @@
         font-size: 1.5rem;
         color: $black;
         text-transform: uppercase;
+
+    }
+}
+
+@media (min-width: $desktop) {
+    .card-peguntas {
+        height: 200px;
+    }
+}
+
+@media (min-width: $tablet) {
+    .card-peguntas {
+        height: 130px;
         
     }
 }
 
-@media screen and (min-width: $desktop) {
+@media (min-width: $desktop-max) {
     .card-peguntas {
-        height: 200px;
+        height: 190px;
+        margin-top: 0;
     }
 }

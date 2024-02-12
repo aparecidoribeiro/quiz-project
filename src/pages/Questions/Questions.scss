@@ -21,7 +21,7 @@ body {
 
 }
 
-@media screen and (min-width: $desktop) {
+@media (min-width: $desktop) {
     .playing {
         padding: $paddind-desktop;
         display: flex;
@@ -30,7 +30,7 @@ body {
         justify-content: center;
         position: relative;
         gap: 3rem;
-        
+
 
         .playing-alt {
             display: grid;
@@ -39,4 +39,12 @@ body {
             gap: 2rem;
         }
     }
+}
+
+@media (min-width: $tablet) {
+
+    .playing {
+        padding: $paddind-tablet;
+    }
+
 }

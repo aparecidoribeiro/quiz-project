@@ -66,3 +66,20 @@
         }
     }
 }
+
+@media (min-width: $tablet) {
+    .modal {
+        >div {
+            @include modal-tablet;
+            gap: 2rem;
+
+            p {
+                font-size: 1.3rem;
+            }
+
+            button {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

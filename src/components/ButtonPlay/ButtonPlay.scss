@@ -36,3 +36,14 @@
     }
 
 }
+
+@media (min-width: $tablet) {
+    .button {
+        font-size: 2rem;
+        max-width: 180px;
+
+        .button-icon {
+            width: 20px;
+        }
+    }
+}

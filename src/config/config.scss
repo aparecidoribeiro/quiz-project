@@ -6,11 +6,14 @@ $icon-infor: "/src/icons/infor.svg";
 $icon-volume: "/src/icons/volume.svg";
 $font: 'Salsa', cursive;
 $paddind-btn: 12px 32px;
-$paddind-desktop: 35px 40px 45px;
 
 
 //Resoluções
+$tablet: 649px;
 $desktop: 1025px;
+$desktop-max: 1300px;
+$paddind-desktop: 35px 40px 45px;
+$paddind-tablet: 35px 40px 45px;
 
 //Paleta de cores
 $blue: #163ED4;
@@ -61,15 +64,18 @@ $red-border: #CA3C32;
     padding: 35px 27px 45px;
 }
 
-@mixin paddin-desktop {
-    padding: 35px 40px 45px;
-}
-
 
 @mixin modal-desktop {
     width: 370px;
     height: 300px;
     font-size: 1.3rem;
+    padding: 1.4rem;
+}
+
+@mixin modal-tablet {
+    width: 280px;
+    height: 240px;
+    font-size: 1.2rem;
     padding: 1.4rem;
 }
 

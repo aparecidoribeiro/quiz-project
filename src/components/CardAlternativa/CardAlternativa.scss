@@ -20,7 +20,19 @@
 
 }
 
-@media screen and (min-width: $desktop) {
+@media (min-width: $desktop) {
+    .card-alt {
+        height: 90px;
+    }
+}
+
+@media (min-width: $tablet) {
+    .card-alt {
+        height: 55px;
+    }
+}
+
+@media (min-width: $desktop-max) {
     .card-alt {
         height: 90px;
     }

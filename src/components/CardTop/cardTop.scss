@@ -24,3 +24,11 @@
         height: 100px;
     }
 }
+
+@media (min-width: $tablet) {
+    
+    .card-top {
+        height: 90px;
+        padding: $paddind-tablet;
+    }
+}
