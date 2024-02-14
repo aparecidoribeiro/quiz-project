@@ -6,6 +6,7 @@ import volume from '@/icons/volume.svg'
 import volumeOff from '@/icons/volume-off.svg'
 import { useDispatch } from 'react-redux'
 import { zeroQuestion } from '@/features/counter'
+import imgHeader from '@public/header.png'
 
 const Player = () => {
 
@@ -73,6 +74,9 @@ const Player = () => {
         size={"1.4rem"}
         onClick={actionPlay}
       />
+      <div className='logo'>
+        <img src={imgHeader} />
+      </div>
     </div>
   )
 }
