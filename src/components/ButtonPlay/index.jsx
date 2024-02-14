@@ -25,7 +25,7 @@ const ButtonPlay = ({ text, icon }) => {
     return (
         <button className='button' onClick={actionBtn}>
             <img src={icon} className='button-icon' />
-            {text}
+            Play
         </button>
     )
 }

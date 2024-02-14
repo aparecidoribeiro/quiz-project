@@ -36,6 +36,7 @@ const Player = () => {
   const actionModal = () => {
     const modal = document.querySelector('.modal-infor')
     modal.style.display = "flex"
+
   }
 
 
@@ -68,7 +69,6 @@ const Player = () => {
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the</p>
       </div>
       <ButtonPlay
-        text={"Play"}
         icon={play}
         size={"1.4rem"}
         onClick={actionPlay}

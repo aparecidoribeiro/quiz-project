@@ -19,6 +19,7 @@
     cursor: pointer;
     max-width: 130px;
     animation: animation-button 1s infinite alternate-reverse;
+    z-index: 9;
 
     .button-icon {
         color: $white-one;
