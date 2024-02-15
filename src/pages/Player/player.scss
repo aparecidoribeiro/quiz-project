@@ -160,7 +160,7 @@ body {
     }
 }
 
-@media (max-width: $tablet) {
+@media (min-width: $tablet) {
     .player {
         padding: $paddind-tablet;
 
@@ -193,7 +193,7 @@ body {
 
             p {
                 font-size: 1rem;
-                width: 500px;
+                max-width: 500px;
             }
         }
     }
