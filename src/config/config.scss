@@ -68,16 +68,16 @@ $red-border: #CA3C32;
 
 @mixin modal-desktop {
     width: 370px;
-    height: 300px;
+    height: auto;
     font-size: 1.3rem;
     padding: 1.4rem;
 }
 
 @mixin modal-tablet {
-    width: 280px;
-    height: 240px;
+    width: 350px;
+    height: auto;
     font-size: 1.2rem;
-    padding: 1.4rem;
+    padding: 1.6rem;
 }
 
 @keyframes animation-button {

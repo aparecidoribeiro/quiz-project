@@ -19,7 +19,7 @@ body {
     height: auto;
     position: absolute;
     bottom: 0;
-    padding: 1rem;
+    padding: 10px 1rem;
 
     img {
         width: 100%;
@@ -160,7 +160,7 @@ body {
     }
 }
 
-@media (min-width: $tablet) {
+@media (max-width: $tablet) {
     .player {
         padding: $paddind-tablet;
 

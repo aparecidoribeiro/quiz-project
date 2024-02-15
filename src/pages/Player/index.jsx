@@ -61,13 +61,14 @@ const Player = () => {
       </div>
       <div className='modal-infor'>
         <div>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the</p>
+          <p>Com intuito de regastar a memória histórica e cultural da cidade de Araripe, foi desenvolvido o jogo "Você Sabe?", 
+            afim compartilhar todas essas informações de uma forma atrativa e divertida. Sinta-se a vontade para aprender enquanto se diverte.</p>
           <button onClick={modalNone}>Voltar</button>
         </div>
       </div>
       <div className='player-sobre'>
         <h1>Você sabe?</h1>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the</p>
+        <p>Esse é um jogo cultural sobre a cidade de Araripe-Ce. Aproveite para aprender enquanto se diverte e assim conhecer um pouco da história dessa bela cidade.</p>
       </div>
       <ButtonPlay
         icon={play}
