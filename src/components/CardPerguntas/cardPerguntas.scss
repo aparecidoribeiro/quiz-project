@@ -2,7 +2,7 @@
 
 .card-peguntas {
     width: 100%;
-    height: 120px;
+    height: auto;
     background: $white-one;
     border-radius: 8px;
     border: 2px solid $white-two;
@@ -15,7 +15,7 @@
     margin-top: 90px;
 
     h1 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         color: $black;
         text-transform: uppercase;
 
