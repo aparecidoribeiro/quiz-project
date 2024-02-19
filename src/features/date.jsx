@@ -32,7 +32,7 @@ const initialState = [
         correta: 'Fequaripe'
     },
     {
-        pergunta: "No mês de junho acontece um evento religioso chamado a 'festa do padroeiro' que ocorre em devoção a qual santo?",
+        pergunta: "No mês de junho acontece um evento religioso chamado de 'festa do padroeiro' que ocorre em devoção a qual santo?",
         altenativas: [
             'Frei Damião',
             'São João',
@@ -40,6 +40,16 @@ const initialState = [
             'Santa Rita'
         ],
         correta: 'Santo Antônio'
+    },
+    {
+        pergunta: "Outro evento que faz parte da cultura araripense, é a festa do minicípio que acontece entre 1 a 3 de agosto em prol do(a)?",
+        altenativas: [
+            'Aniversário da Cidade',
+            'Missa do Vaqueiro',
+            'Campeonato de Futebol',
+            'Dia do Estudante'
+        ],
+        correta: 'Aniversário da Cidade'
     },
 ]
 

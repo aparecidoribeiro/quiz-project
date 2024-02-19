@@ -10,8 +10,9 @@ import imgHeader from '@public/header.png'
 
 const Player = () => {
 
-  const music = new Audio('/src/sons/play.mp3')
+  const music = new Audio('/src/sons/luna.mp3')
   music.loop = true
+  
   const dispatch = useDispatch()
 
   const actionPlay = () => {
