@@ -7,12 +7,13 @@ import volumeOff from '@/icons/volume-off.svg'
 import { useDispatch } from 'react-redux'
 import { zeroQuestion } from '@/features/counter'
 import imgHeader from '@public/header.png'
+import sound from '/src/sons/luna.mp3'
 
 const Player = () => {
 
-  const music = new Audio('/src/sons/luna.mp3')
+  const music = new Audio(sound)
   music.loop = true
-  
+
   const dispatch = useDispatch()
 
   const actionPlay = () => {
