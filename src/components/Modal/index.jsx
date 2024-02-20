@@ -16,6 +16,7 @@ const Modal = () => {
     const actionReturn = () => {
         const modal = document.querySelector('.modal')
         modal.style.display = 'none'
+        window.location.reload()
         dispatch(telaPlay())
         dispatch(zeroQuestion())
         dispatch(valueFalse())

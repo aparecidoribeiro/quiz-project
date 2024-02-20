@@ -4,7 +4,6 @@ const ButtonReturn = () => {
 
     const modalFlex = () => {
         const modal = document.querySelector('.modal')
-
         modal.style.display = 'flex'
     }
 

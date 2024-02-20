@@ -7,10 +7,9 @@ import volumeOff from '@/icons/volume-off.svg'
 import { useDispatch } from 'react-redux'
 import { zeroQuestion } from '@/features/counter'
 import imgHeader from '@public/header.png'
-import sound from '/src/sons/luna.mp3'
+import sound from '/src/sons/som.mp3'
 
 const Player = () => {
-
   const music = new Audio(sound)
   music.loop = true
 
@@ -21,6 +20,9 @@ const Player = () => {
     dispatch(telaPlaying())
   }
 
+  window.onload = () => {
+    music.pause()
+  }
 
   const actionMusic = () => {
     const imgBtn = document.querySelector('.img-volume')
@@ -33,7 +35,6 @@ const Player = () => {
       imgBtn.setAttribute('src', volumeOff)
       music.pause()
     }
-
   }
 
   const actionModal = () => {
@@ -41,7 +42,6 @@ const Player = () => {
     modal.style.display = "flex"
 
   }
-
 
   const modalNone = () => {
     const modal = document.querySelector('.modal-infor')
@@ -63,7 +63,7 @@ const Player = () => {
       </div>
       <div className='modal-infor'>
         <div>
-          <p>Com intuito de regastar a memória histórica e cultural da cidade de Araripe, foi desenvolvido o jogo "Você Sabe?", 
+          <p>Com intuito de regastar a memória histórica e cultural da cidade de Araripe, foi desenvolvido o jogo "Você Sabe?",
             afim compartilhar todas essas informações de uma forma atrativa e divertida. Sinta-se a vontade para aprender enquanto se diverte.</p>
           <button onClick={modalNone}>Voltar</button>
         </div>
