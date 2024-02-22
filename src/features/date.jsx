@@ -51,6 +51,56 @@ const initialState = [
         ],
         correta: 'Aniversário da Cidade'
     },
+    {
+        pergunta: "Qual é o ano de fundação da cidade de Araripe, no Ceará?",
+        altenativas: [
+            '1850',
+            '1877',
+            '1905',
+            '1922'
+        ],
+        correta: '1877'
+    },
+    {
+        pergunta: "Araripe é um dos lugares de maior veneração ao Frei Damião, prova disso é o local que abriga uma capela e o santuário com a estátua do milagreiro. Qual local é esse?",
+        altenativas: [
+            'Igreja Matriz',
+            'Raspadeira de Mandioca',
+            'Cruz do Monte',
+            'Correto Municipal'
+        ],
+        correta: 'Cruz do Monte'
+    },
+    {
+        pergunta: "Em qual local da cidade é responsavél por resguardada as memórias e relíquias araripense?",
+        altenativas: [
+            'Biblioteca Municipal',
+            'Secretaria de Cultura',
+            'Secretaria de Educação',
+            'Espaço cultural Casa de Pitia'
+        ],
+        correta: 'Espaço cultural Casa de Pitia'
+    },
+    {
+        pergunta: "Araripe possuí um parque natural no qual é frequentado por turistas e adimirado pelas suas cavernas, qual distrito faz esse marco na cultura na cidade?",
+        altenativas: [
+            'Brejinho',
+            'Riacho Grande',
+            'Pajeú',
+            'Alagoinha'
+        ],
+        correta: 'Brejinho'
+    },
+    {
+        pergunta: "Quais cidades cearenses fazem fronteira com o município de Araripe?",
+        altenativas: [
+            'Salitre, Potengi, Campo Sales',
+            'Santana do Cariri, Potengi, Campo Sales',
+            'Salitre, Potengi, Santana do Cariri',
+            'Assaré, Potengi, Campo Sales'
+        ],
+        correta: 'Salitre, Potengi, Santana do Cariri'
+    }
 ]
 
 const dateSlice = createSlice({
