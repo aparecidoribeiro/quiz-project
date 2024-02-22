@@ -82,7 +82,7 @@ const initialState = [
         correta: 'Espaço cultural Casa de Pitia'
     },
     {
-        pergunta: "Araripe possuí um parque natural no qual é frequentado por turistas e adimirado pelas suas cavernas, qual distrito faz esse marco na cultura na cidade?",
+        pergunta: "Araripe possuí um parque natural no qual é frequentado por turistas e adimirado pelas suas cavernas, qual distrito faz esse marco na cultura da cidade?",
         altenativas: [
             'Brejinho',
             'Riacho Grande',
