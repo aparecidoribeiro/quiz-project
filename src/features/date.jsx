@@ -42,7 +42,7 @@ const initialState = [
         correta: 'Santo Antônio'
     },
     {
-        pergunta: "Outro evento que faz parte da cultura araripense, é a festa do minicípio que acontece entre 1 a 3 de agosto em prol do(a)?",
+        pergunta: "Outro evento que faz parte da cultura araripense, é a festa do município que acontece entre 1 a 3 de agosto em prol do(a)?",
         altenativas: [
             'Aniversário da Cidade',
             'Missa do Vaqueiro',
@@ -67,7 +67,7 @@ const initialState = [
             'Igreja Matriz',
             'Raspadeira de Mandioca',
             'Cruz do Monte',
-            'Correto Municipal'
+            'Coreto Municipal'
         ],
         correta: 'Cruz do Monte'
     },
