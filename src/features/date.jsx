@@ -55,11 +55,11 @@ const initialState = [
         pergunta: "Qual é o ano de fundação da cidade de Araripe, no Ceará?",
         altenativas: [
             '1850',
-            '1877',
+            '1875',
             '1905',
             '1922'
         ],
-        correta: '1877'
+        correta: '1875'
     },
     {
         pergunta: "Araripe é um dos lugares de maior veneração ao Frei Damião, prova disso é o local que abriga uma capela e o santuário com a estátua do milagreiro. Qual local é esse?",
