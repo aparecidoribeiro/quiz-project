@@ -77,9 +77,9 @@ const initialState = [
             'Biblioteca Municipal',
             'Secretaria de Cultura',
             'Secretaria de Educação',
-            'Espaço cultural Casa de Pitia'
+            'Espaço Cultural Casa de Pitia'
         ],
-        correta: 'Espaço cultural Casa de Pitia'
+        correta: 'Espaço Cultural Casa de Pitia'
     },
     {
         pergunta: "Araripe possuí um parque natural no qual é frequentado por turistas e adimirado pelas suas cavernas, qual distrito faz esse marco na cultura da cidade?",
